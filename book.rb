@@ -23,8 +23,26 @@ class Book
         @finished = finished
         @count = count
     end
+
+    def to_s
+        "#{title} by #{author}"
+    end
+
+    def recommended_books
+
+        puts "you should read these 3 books!"
+
+        recommended = Array.[](
+            Book.new("The Well-Grounded Rubyist", "David A. Black \n"),
+            Book.new("Practical Object-Oriented Design in Ruby", "Sandi Metz"),
+            Book.new("Effective Testing with RSpec 3", "Myron Marston")
+          )
+        
+        puts recommended
+
+    end
 end
 
-# bookOne = Book.new("The Lion Queen", "JJ Maybums")
-# bookOne.count = 5
-# puts bookOne.inspect
+
+bookOne = Book.new("The Lion Queen", "JJ Maybums")
+bookOne.recommended_books

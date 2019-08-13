@@ -31,6 +31,7 @@ First, we need to clone the repository and then run irb in the terminal.
    - Add a `listen` method to `AudioBook` that sets the `finished` value to `true`.
    - Add a `read` method to `ComicBook` that sets the `finished` value to `true`
 
+
 5. Add a `recommended_books` class method to the `Book` class that creates and returns an array of recommended books
 
    - Add the following code inside of the `recommended_books` class method:
