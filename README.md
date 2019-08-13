@@ -18,11 +18,13 @@ First, we need to clone the repository and then run irb in the terminal.
    - All of the instance variables should be set in the initialize method.
 
 2. Test out your book class using irb.
+
 3. Use `attr_` macros to provide access to the instance variables.
 
    - `title` and `author` should only be readable.
    - `finished` should only be writeable.
    - `count` should be readable and writeable.
+
 
 4. Create `AudioBook` (`audio_book.rb`) and `ComicBook` (`comic_book.rb`) classes that inherit from `Book`.
 
